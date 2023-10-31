@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./public/weather.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+    border-radius: 10px;
+}
+
+h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+ .card input{
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 14px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+ }
+
+ .temp-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+
+i{
+    display: none;
+    font-size: 25px;
+    margin-left: 40px;
+ }
+
+ .temp-group .icon .active{
+    display: block;
+ }
+
+ .card .temp{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.8rem;
+ }
